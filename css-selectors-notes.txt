@@ -1,0 +1,33 @@
+CSS Selectors :
+
+Types :
+1)Simple selectors 
+2)Combinator selectors 
+3)Pseudo class selectors 
+4)Pseudo elements selectors
+5)Attribute selectors
+
+
+1)Simple selectors :
+-->element 
+-->class
+-->id
+-->universal
+-->Grouping selectors(Implemented)
+
+2)Combinator selectors
+
+-->descendant selector (space)
+-->child selector (>)
+-->adjacent sibling selector (+)
+-->general sibling selector (~)
+
+
+
+
+
+
+
+
+
+
