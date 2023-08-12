@@ -6,63 +6,159 @@
     <title>Form</title>
 
     <style>
-      .form{
-        width:fit-content;
-        /* background-color: #222536; */
-        
-      }
-      .flex-container {
+      body {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .text-align-end {
+        text-align: end;
+      }
+
+      .flex-container {
         background-color: #222536;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
         color: yellow;
       }
-
-      .centered-content {
-        /* Additional styling for the centered content */
-        padding: 5px;
-        margin: 5px;
-      }
-
       .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(16, 1fr);
-        gap: 10px; /* Adjust the gap as needed */
+        grid-template-rows: repeat(9, 1fr);
+        gap: 0px; /* Adjust the gap as needed */
       }
 
       .grid-item {
+        width: 225px;
         padding: 10px;
+        padding-left: 0;
         text-align: center;
+        background-color: #222536;
       }
+
+      .label-container {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .input-container {
+        display: flex;
+        justify-content: flex-start;
+      }
+      #option1{
+        margin: 0;
+        margin-right: 3px;
+      }
+      .top{
+        background-color: #de8704;
+        padding: 20px;
+        font-size: 20px;
+      }
+      #submit{
+        padding: ;
+        border: 0;
+        border-radius: 0;
+        height: 40px;
+        width: 100px;
+        margin-right: 10px;
+        background-color: #62af5e;
+        color: white
+
+      }
+
+      #cancel{
+        padding: ;
+        border: 0;
+        border-radius: 0;
+        height: 40px;
+        width: 100px;
+        margin-right: 10px;
+        background-color: #d9544f;
+        color: white
+
+      }
+
+      
     </style>
   </head>
   <body>
-    <div class="form">
+    <div class="flex-container">
+        <div class="input-container top"><label>Signup</label></div>
       <div class="grid-container">
-        <div class="grid-item"><label>First Name </label></div>
-        <div class="grid-item"><input placeholder="Enter First Name" /></div>
-        <div class="grid-item"><label>Last Name </label></div>
-        <div class="grid-item"><input placeholder="Enter Last Name" /></div>
-        <div class="grid-item"><label>Date of Birth </label></div>
-        <div class="grid-item"><input type="date" /></div>
-        <div class="grid-item"><label>Gender </label></div>
         <div class="grid-item">
-          <input type="radio" /><label>Male</label> <input type="radio" /><label
-            >Female</label
-          >
+          <div class="label-container"><label>First Name </label></div>
         </div>
-        <div class="grid-item"><label>E-mail </label></div>
-        <div class="grid-item"><input placeholder="Enter email id" /></div>
-        <div class="grid-item"><label>Phone Number </label></div>
-        <div class="grid-item"><input type="tel" placeholder="Enter Phone number" /></div>
-        <div class="grid-item"><label>Password</label></div>
-        <div class="grid-item"><input type="password" /></div>
-        <div class="grid-item"><label>Confirm Password</label></div>
-        <div class="grid-item"><input type="password" /></div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input placeholder="Enter First Name" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Last Name </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input placeholder="Enter Last Name" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Date of Birth </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container"><input type="date" /></div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Gender </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input type="radio" /><label>Male</label>
+            <input type="radio" /><label>Female</label>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>E-mail </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input placeholder="Enter email id" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Phone Number </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input type="tel" placeholder="Enter Phone number" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Password</label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container"><input type="password" /></div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Confirm Password</label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container"><input type="password" /></div>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input type="radio" id="option1" name="options" />
+            <label for="option1" class="radio-label"
+              >I Agree to terms and condtions</label
+            >
+          </div>
+        </div>
       </div>
+      <div class="label-container top"><button id="submit" type="submit">Submit</button> <button id="cancel" type="submit">Cancel</button></div>
     </div>
   </body>
 </html>
