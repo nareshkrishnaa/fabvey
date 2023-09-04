@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Tags and Descriptions</title>
+
+    <style>
+
+table,
+          th,
+          td {
+            border: 1px solid black;
+            padding: 5px;
+            border-collapse: collapse;
+         
+          }
+    </style>
+</head>
+<body>
+    <h1>HTML Form Tags and Descriptions</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Element</th>
+                <th>Example</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Form Element</td>
+                <td>&lt;form&gt;</td>
+                <td>The main container for all form elements.</td>
+            </tr>
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>Input Element</td>
+                <td><input type="text" value="&lt;input&gt;" readonly></td>
+                <td>Used for various types of input fields, including text, password, radio buttons, checkboxes, etc.</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Textarea Element</td>
+                <td><textarea>&lt;textarea&gt;</textarea></td>
+                <td>Allows for multi-line text input.</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Select Element</td>
+                <td>
+                    <select>
+                        <option>&lt;select&gt;</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                </td>
+                <td>Creates a dropdown list or a list box for selecting options.</td>
+            </tr>
+            <tr>
+                <td>&lt;option&gt;</td>
+                <td>Option Element</td>
+                <td><option>&lt;option&gt;</option></td>
+                <td>Used within a &lt;select&gt; element to define individual options.</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Button Element</td>
+                <td><button>&lt;button&gt;</button></td>
+                <td>Defines a clickable button, which can trigger form submission or custom JavaScript functions.</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Label Element</td>
+                <td><label>&lt;label&gt;</label></td>
+                <td>Provides a label or description for an input element, enhancing accessibility.</td>
+            </tr>
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Fieldset Element</td>
+                <td>
+                    <fieldset>
+                        <legend>Fieldset</legend>
+                        &lt;fieldset&gt;
+                    </fieldset>
+                </td>
+                <td>Groups related form elements together for better organization.</td>
+            </tr>
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Legend Element</td>
+                <td>
+                    <fieldset>
+                        <legend>&lt;legend&gt;</legend>
+                    </fieldset>
+                </td>
+                <td>Provides a title or caption for a &lt;fieldset&gt;.</td>
+            </tr>
+            <tr>
+                <td>&lt;optgroup&gt;</td>
+                <td>Optgroup Element</td>
+                <td>
+                    <select>
+                        <optgroup label="Group 1">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>Groups related options within a &lt;select&gt; element.</td>
+            </tr>
+            <tr>
+                <td>&lt;option&gt;</td>
+                <td>Option Element</td>
+                <td><option>&lt;option&gt;</option></td>
+                <td>Used within an &lt;optgroup&gt; to define individual options.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="file"&gt;</td>
+                <td>File Input Element</td>
+                <td><input type="file"></td>
+                <td>Allows users to upload files.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="hidden"&gt;</td>
+                <td>Hidden Input Element</td>
+                <td><input type="hidden"></td>
+                <td>Stores data on the server-side without displaying it to the user.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="submit"&gt;</td>
+                <td>Submit Button Element</td>
+                <td><input type="submit" value="Submit"></td>
+                <td>Creates a submit button to send the form data to the server.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="reset"&gt;</td>
+                <td>Reset Button Element</td>
+                <td><input type="reset" value="Reset"></td>
+                <td>Creates a reset button to clear the form fields.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="image"&gt;</td>
+                <td>Image Submit Element</td>
+                <td><input type="image" src="image.jpg" alt="Submit"></td>
+                <td>Defines an image as a submit button.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="radio"&gt;</td>
+                <td>Radio Button Element</td>
+                <td><input type="radio" name="gender" value="male"> Male<br><input type="radio" name="gender" value="female"> Female</td>
+                <td>Allows users to select a single option from a group.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="checkbox"&gt;</td>
+                <td>Checkbox Element</td>
+                <td><input type="checkbox" name="fruits" value="apple"> Apple<br><input type="checkbox" name="fruits" value="banana"> Banana</td>
+                <td>Allows users to select multiple options from a group.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="color"&gt;</td>
+                <td>Color Picker Element</td>
+                <td><input type="color" value="#ff0000"></td>
+                <td>Provides a color picker input.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="date"&gt;</td>
+                <td>Date Input Element</td>
+                <td><input type="date"></td>
+                <td>Input type for selecting a date.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="month"&gt;</td>
+                <td>Month Input Element</td>
+                <td><input type="month"></td>
+                <td>Input type for selecting a month and year.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="week"&gt;</td>
+                <td>Week Input Element</td>
+                <td><input type="week"></td>
+                <td>Input type for selecting a week and year.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="time"&gt;</td>
+                <td>Time Input Element</td>
+                <td><input type="time"></td>
+                <td>Input type for selecting a time.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="email"&gt;</td>
+                <td>Email Input Element</td>
+                <td><input type="email"></td>
+                <td>Input type for email addresses.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="url"&gt;</td>
+                <td>URL Input Element</td>
+                <td><input type="url"></td>
+                <td>Input type for URLs.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="tel"&gt;</td>
+                <td>Telephone Input Element</td>
+                <td><input type="tel"></td>
+                <td>Input type for telephone numbers.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="number"&gt;</td>
+                <td>Number Input Element</td>
+                <td><input type="number"></td>
+                <td>Input type for numeric values.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="range"&gt;</td>
+                <td>Range Input Element</td>
+                <td><input type="range"></td>
+                <td>Input type for selecting a range of numeric values.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="search"&gt;</td>
+                <td>Search Input Element</td>
+                <td><input type="search"></td>
+                <td>Input type for search queries.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="password"&gt;</td>
+                <td>Password Input Element</td>
+                <td><input type="password"></td>
+                <td>Hides the entered text to be used for password input.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="text"&gt;</td>
+                <td>Text Input Element</td>
+                <td><input type="text"></td>
+                <td>Creates a single-line text input field.</td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</body>
+</html>
