@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card task</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet"> -->
+    <style>
+        body{
+            font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+        }
+        
+        .centered{
+            display: flex;
+            flex-direction: column;
+            /* height: 100vh; */
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            color: rgb(69, 38, 98);
+        }
+        
+        .content{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .card{
+           
+            display: flex;
+            width: 300px;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        img{
+           
+            width: 300px;
+        }
+        h1{
+            
+            font-size: 50px;
+            font-weight:bolder;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .img3{
+            margin-bottom:50px ;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered">
+        <div><h1>In Focus</h1></div>
+        
+        <div class="content">
+            <div class="card">
+                <div><img src="./images/values-1.png" alt=""></div>
+                <h2>Mobile App</h2>
+                <p>Android mobile app for Vehicle Location Real time Tracking System</p>
+            </div>
+           
+            <div class="card">
+                <div><img src="./images/values-10.png" alt=""></div>
+                
+                <h2>Web Portal</h2>
+                <p> The site can be best viewed in the latest version of Chrome, Firefox, Safari, Opera, Edge Browser</p>
+            </div>
+
+            <div class="card">
+                <div><img src="./images/values-3.jpeg" alt="" class="img3"></div>
+                
+                <h2>Real Time Tracking</h2>
+                <p> The vehicle's location is provided by VLTD installed in the vehicle communicating with a GPS Satellite network and transmits the location data in real time.</p>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Flext tasks</title>
+
+    <style>
+                    .flex-vertical{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 50px;
+                        color: purple;
+                    }
+
+                    .flex-horizontal{
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 30px;
+                    }
+
+                    .icon{
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 7px;
+                      
+                    }
+                   
+
+                    div img {
+                        width: 400px;
+                    }
+                    h1{
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 50px;
+                    }
+
+                    p{
+                     
+                      font-family: 'Roboto', sans-serif;
+                      text-align: center;
+                      font-size: 25px;
+                    }
+                    h2{
+                      
+                      font-family: 'Roboto', sans-serif;
+                        font-size: 40px;
+                        margin-bottom: 5px;
+                    }
+
+                    .card{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    h4{
+                        font-size: 25px;
+                        font-family: 'Roboto', sans-serif;
+                        margin-top:5px;
+                        margin-bottom: 5px;
+                        font-weight: lighter;
+                        font-style: italic;
+                    }
+
+                    .icon img{
+                        width: 30px;
+                        color: blue;
+                    }
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    </style>
+  </head>
+  <body>
+    <div class="flex-vertical">
+      <h1>TEAM</h1>
+
+      <div>
+        <p>
+          ed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </p>
+      </div>
+      <br />
+
+      <div class="flex-horizontal">
+        <div class="card">
+          <img src="./team-1.jpg" alt="" />
+          <h2>Walter White</h2>
+          <h4>CEO</h4>
+          <div class="icon">
+            <img src="./images/facebook.svg" alt="">
+            <img src="./images/instagram.svg" alt="">
+            <img src="./images/linkedin.svg" alt="">
+            <img src="./images/twitter.svg" alt="">   
+            </div>
+          
+        </div>
+        <div class="card">
+          <img src="./team-2.jpg" alt="" />
+          <h2>Sara Johnson</h2>
+          <h4>Product Manager</h4>
+          <div class="icon">
+            <img src="./images/facebook.svg" alt="">
+            <img src="./images/instagram.svg" alt="">
+            <img src="./images/linkedin.svg" alt="">
+            <img src="./images/twitter.svg" alt="">   
+            </div>
+        </div>
+        <div class="card">
+          <img src="./team-3.jpg" alt="" />
+          <h2>Williom Anderson  </h2>
+          <h4>CTO</h4>
+          <div class="icon">
+            <img src="./images/facebook.svg" alt="">
+            <img src="./images/instagram.svg" alt="">
+            <img src="./images/linkedin.svg" alt="">
+            <img src="./images/twitter.svg" alt="">   
+            </div>
+        </div>
+        <div class="card">
+          <img src="./team-4.jpg" alt="" />
+          <h2>Amanda Jemson</h2>
+          <h4>Accountant</h4>
+          <div class="icon">
+            <img src="./images/facebook.svg" alt="">
+            <img src="./images/instagram.svg" alt="">
+            <img src="./images/linkedin.svg" alt="">
+            <img src="./images/twitter.svg" alt="">   
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

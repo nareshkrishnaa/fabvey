@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>HTML Table Example</title>
+        <style>
+          thead {
+            background-color: rgb(227, 117, 117);
+          }
+          table,
+          th,
+          td {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            border-spacing: 5px;
+          }
+
+          tr:nth-child(even) {
+  background-color: rgba(23, 32, 32, 0.4);
+}
+tr:hover {background-color: #D6EEEE;}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(96, 252, 252, 0.4);
+}
+        </style>
+      </head>
+      <body>
+        <table>
+          <caption>
+            Table Caption
+          </caption>
+          <thead>
+            <tr>
+              <th>&lt;Tag&gt;</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Defines a table</td>
+              </tr>
+            
+            <tr>
+              <td>&lt;th&gt;</td>
+              <td>Defines a header cell in a table</td>
+            </tr>
+            <tr>
+              <td>&lt;tr&gt;</td>
+              <td>Defines a row in a table</td>
+            </tr>
+            <tr>
+              <td>&lt;td&gt;</td>
+              <td>Defines a cell in a table</td>
+            </tr>
+            <tr>
+              <td>&lt;caption&gt;</td>
+              <td>Defines a table caption</td>
+            </tr>
+            <tr>
+              <td>&lt;colgroup&gt;</td>
+              <td>
+                Specifies a group of one or more columns in a table for
+                formatting
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;col&gt;</td>
+              <td>
+                Specifies column properties for each column within a
+                &lt;colgroup&gt; element
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;thead&gt;</td>
+              <td>Groups the header content in a table</td>
+            </tr>
+            <tr>
+              <td>&lt;tbody&gt;</td>
+              <td>Groups the body content in a table</td>
+            </tr>
+            <tr>
+              <td>&lt;tfoot&gt;</td>
+              <td>Groups the footer content in a table</td>
+            </tr>
+            <thead>
+                <tr>
+                  <th>CSS Property</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+
+              <tr>
+                <td>border</td>
+                <td>adds a border</td>
+              </tr>
+              <tr>
+                <td>border-style</td>
+                <td>dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden</td>
+              </tr>
+              <tr>
+                <td>border-color</td>
+                <td>Gives border color</td>
+              </tr>
+              <tr>
+                <td>width</td>
+                <td>Provides the width of row/column or a cell</td>
+              </tr>
+
+              <tr>
+                <td>height</td>
+                <td>Provides the height of row/column or a cell</td>
+              </tr>
+
+              <tr>
+                <td>colspan</td>
+                <td>Merge 2 or more cells in a row to create a larger cell</td>
+              </tr>
+
+              <tr>
+                <td>rowspan</td>
+                <td>Merge 2 or more cells in a column to create a larger cell</td>
+              </tr>
+
+              <tr>
+                <td>padding</td>
+                <td>Provides padding for cells</td>
+              </tr>
+
+              <tr>
+                <td>spacing</td>
+                <td>Provides space between the cells</td>
+              </tr>
+
+              <tr>
+                <td>Styling - zebra stripes</td>
+                <td>tr:nth-child(even)</td>
+              </tr>
+
+              <tr>
+                <td>tr:hover</td>
+                <td>selector on tr to highlight table rows on mouse over:</td>
+              </tr>
+
+          </tbody>
+          
+        </table>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .text-align-end {
+        text-align: end;
+      }
+
+      .flex-container {
+        background-color: #222536;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        color: yellow;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 0px; /* Adjust the gap as needed */
+      }
+
+      .grid-item {
+        width: 225px;
+        padding: 10px;
+        padding-left: 0;
+        text-align: center;
+        background-color: #222536;
+      }
+
+      .label-container {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .input-container {
+        display: flex;
+        justify-content: flex-start;
+      }
+      #option1{
+        margin: 0;
+        margin-right: 3px;
+      }
+      .top{
+        background-color: #de8704;
+        padding: 20px;
+        font-size: 20px;
+      }
+      #submit{
+        padding: ;
+        border: 0;
+        border-radius: 0;
+        height: 40px;
+        width: 100px;
+        margin-right: 10px;
+        background-color: #62af5e;
+        color: white
+
+      }
+
+      #cancel{
+        padding: ;
+        border: 0;
+        border-radius: 0;
+        height: 40px;
+        width: 100px;
+        margin-right: 10px;
+        background-color: #d9544f;
+        color: white
+
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+        <div class="input-container top"><label>Signup</label></div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="label-container"><label>First Name </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input placeholder="Enter First Name" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Last Name </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input placeholder="Enter Last Name" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Date of Birth </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container"><input type="date" /></div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Gender </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input type="radio" /><label>Male</label>
+            <input type="radio" /><label>Female</label>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>E-mail </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input placeholder="Enter email id" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Phone Number </label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input type="tel" placeholder="Enter Phone number" />
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Password</label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container"><input type="password" /></div>
+        </div>
+        <div class="grid-item">
+          <div class="label-container"><label>Confirm Password</label></div>
+        </div>
+        <div class="grid-item">
+          <div class="input-container"><input type="password" /></div>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <div class="input-container">
+            <input type="checkbox" id="option1" name="options" />
+            <label for="option1" class="radio-label"
+              >I Agree to terms and condtions</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="label-container top"><button id="submit" type="submit">Submit</button> <button id="cancel" type="submit">Cancel</button></div>
+    </div>
+  </body>
+</html>
