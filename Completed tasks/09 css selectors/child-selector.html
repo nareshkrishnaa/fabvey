@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p {
+  background-color: yellow;
+}
+    </style>
+</head>
+<body>
+
+    <pre>
+
+        div > p {
+            background-color: yellow;
+          }
+
+          ---------
+
+         &lt;div&gt;
+
+         &lt;p&gt;Paragraph 1 in the div.&lt;/p&gt;
+         &lt;p&gt;Paragraph 2 in the div.&lt;/p&gt;
+          &lt;section&gt;
+         &lt;!-- not Child but Descendant --&gt;
+          &lt;p&gt;Paragraph 3 in the div (inside a section element).&lt;/p&gt;
+          &lt;/section&gt;
+          &lt;p&gt;Paragraph 4 in the div.&lt;/p&gt;
+
+          &lt;/div&gt;
+
+           &lt;p&gt;Paragraph 5. Not in a div.&lt;/p&gt;
+           &lt;p&gt;Paragraph 6. Not in a div.&lt;/p&gt;
+    </pre>
+
+
+
+
+    <h2>Child Selector</h2>
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
+
+    
+</body>
+</html>

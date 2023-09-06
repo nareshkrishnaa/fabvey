@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        div p {
+            background-color: yellow;
+          }
+    </style>
+</head>
+<body>
+    <h1>Descendant selector</h1>
+    <pre>
+        div p {
+            background-color: yellow;
+          }
+
+          &lt;div&gt;
+          
+             &lt;p&gt;Paragraph 1 in the div.&lt;/p&gt;
+             &lt;p&gt;Paragraph 2 in the div.&lt;/p&gt;
+             &lt;section&gt;&lt;p&gt;Paragraph 3 in the div.&lt;/p&gt;&lt;/section&gt;
+
+        &lt;/div&gt;
+
+            &lt;p&gt;Paragraph 4. Not in a div.&lt;/p&gt;
+            &lt;p&gt;Paragraph 5. Not in a div.&lt;/p&gt;
+
+
+    </pre>
+
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+    
+</body>
+</html>
