@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>A js program with a ternar operator to give the maximum of two numbers</h1>
+    <button onclick="findMaximum()">Find Maximum</button>
+    <p id="result"></p>
+
+
+    <script>
+        function findMaximum() {
+            let a = prompt("Enter number 1");
+            let b = prompt("Enter number 2");
+
+            
+            a = parseFloat(a);
+            b = parseFloat(b);
+
+     
+            let maximum = (a > b) ? a : b;
+
+            
+            document.getElementById("result").innerHTML = "The maximum number is: " + maximum;
+        }
+    </script>
+
+</body>
+</html>

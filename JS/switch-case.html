@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day of the Week</title>
+    
+</head>
+<body>
+    <h2>A js program using switch case to find the day of the week</h2>
+    <button onclick="findDayOfWeek()">Find Day of the Week</button>
+    <p id="result"></p>
+    <script>
+        function findDayOfWeek() {
+           
+            let dayNumber = parseInt(prompt("Enter a the day of the week in number (1 to 7)"));
+            let day;
+            switch (dayNumber) {
+                case 1:
+                    day = "Sunday";
+                    break;
+                case 2:
+                    day = "Monday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                    break;
+                case 4:
+                    day = "Wednesday";
+                    break;
+                case 5:
+                    day = "Thursday";
+                    break;
+                case 6:
+                    day = "Friday";
+                    break;
+                case 7:
+                    day = "Saturday";
+                    break;
+                default:
+                    day = "Invalid input";
+                    break;
+            }
+
+            document.getElementById("result").innerHTML = "Day of the week is: " + day;
+        }
+    </script>
+</body>
+</html>

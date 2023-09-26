@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        This js program is achieved using if-else statement
+    </h1>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>&lt;0</td>
+            <td>negative</td>
+        </tr>
+        <tr>
+            <td>&gt;0</td>
+            <td>positive</td>
+        </tr>
+        <tr>
+            <td>=0</td>
+            <td>neutral</td>
+        </tr>
+    </table>
+    <br>
+    
+    <button onclick="numberResult()">number result</button>
+
+    
+    
+
+    
+    
+
+    <script>
+
+        function numberResult(){
+            let a = prompt("enter a number");
+        if(a>0){
+            console.log("Positive");
+            document.write("<p>Entered number is <b>positive</b></p>");
+        }else if(a<0){
+            console.log("negative");
+            document.write("<p>Entered number is <b>negative</b></p>");
+        }else{
+            console.log("neutral");
+            document.write("<p>Entered number is <b>neutral</b> </p>");
+        }
+
+        }
+        
+        
+        
+    </script>
+</body>
+</html>

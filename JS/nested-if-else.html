@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JavaScriptElseStatement </title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+</head>
+ <h1> Nested if Else Statement </h1>
+<body>
+    
+    <table>
+        <tr>
+            <th>Age</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>&lt;18</td>
+            <td>You are Minor. Not Eligible to Work</td>
+        </tr>
+        <tr>
+            <td>&gt;18 && &lt;60</td>
+            <td>You are Eligible to Work. Please fill in your details and apply</td>
+        </tr>
+        <tr>
+            <td>&gt;60</td>
+            <td>You are too old to work as per the Government rules. Please Collect your pension!</td>
+        </tr>
+    </table>
+    
+
+<script>
+    
+  var age = prompt("Enter your age");
+  if( age < 18 )
+  {
+    document.write("<b> You are Minor. </b>"); 
+    document.write("<br\> Not Eligible to Work " ); 
+  }
+  else
+  {
+    if (age >= 18 && age <= 60 )
+    {
+        document.write("<b> You are Eligible to Work. </b>");
+        document.write("<br\> Please fill in your details and apply " ); 
+    }
+    else
+    {
+        document.write("<b> You are too old to work as per the Government rules </b>");
+        document.write("<br\> Please Collect your pension!" );    
+    }
+  }
+</script>
+</body>
+</html>

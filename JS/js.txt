@@ -1,0 +1,52 @@
+js
+
+why js?
+to bring user interaction. to bring the website alive. Without js website is just static.
+
+js brings functionality to elements.
+
+Is js server side scriting or client side scripting?
+
+Ans: BOTH
+
+HTML and css are markup language
+JS is a programming language
+
+Static website vs dynamic website
+
+
+What can js do?
+-->Change html content
+-->change html attribute
+-->CHange html style
+-->Show/hide html elements
+
+Advantages of js
+-->Full integration with html css
+-->Make website load quick because of client side scripting
+-->no need for compiler, browser is enough
+-->not dependent on server.
+
+
+Interaction boxes
+-->alert
+-->Prompt
+-->Confirm
+
+
+Datatypes
+--> Primitive(number,string,BigInt,Boolean,Null,NaN,Undefined)
+-->Non primitive(Arrays,Objects)
+
+
+Variable:Stores a data
+
+Declaration --> Let,const,var(keywords)
+
+
+Conditional operator / ternary operator
+
+ typeof(); method is used to determinre the type of the variable
+JS uses dynamic typing. User need'nt provide the type of the data during declaration
+
+undefined,null,NaN(not a number)isNaN(a);
