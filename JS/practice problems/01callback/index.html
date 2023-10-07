@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Call back</h2>
+
+
+<p id="demo"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function mySecond() {
+  myDisplayer("Function 1");
+}
+
+function myFirst() {
+  myDisplayer("Function2");
+}
+
+
+
+
+
+myFirst();
+mySecond();
+</script>
+
+</body>
+</html>

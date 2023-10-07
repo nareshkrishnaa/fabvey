@@ -1,0 +1,160 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0 5px;
+  box-sizing: border-box;
+
+  body {
+    font-family: sans-serif;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+
+  height: 10%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-size: 5vw;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 3vw;
+    gap: 15px;
+  }
+}
+
+
+
+.main {
+  display: flex;
+  height: 80%;
+
+  &__image {
+    width: 50%;
+    background-image: url('./images/Portrait.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+
+    &-1 {
+      font-size: 10vw;
+    }
+
+
+  }
+}
+
+span{
+  color: red;
+}
+
+.footer {
+  height: 10%;
+
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+
+  [class^="footer__"] {
+    img {
+      width: 5.3vw;
+    }
+  }
+}
+
+@media (max-width:650px) {
+  .header {
+
+    height: 30%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+    &__logo {
+      font-size: 10vw;
+    }
+
+    &__menu {
+      display: none;
+
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    &__image {
+      width: 200px;
+      height: 200px;
+      background-image: url('./images/Portrait.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 100px;
+    }
+  
+    &__text {
+      display: flex;
+      flex-direction: column;
+     align-items: start;
+      font-size: 5vw;
+  
+      &-1 {
+        font-size: 7vw;
+      }
+    }
+  }
+  
+
+  .footer {
+    height: 10%;
+  
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+  
+    [class^="footer__"] {
+      img {
+        width: 5.3vw;
+      }
+    }
+  }
+
+
+}
+
+#size {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 35px;
+}

@@ -1,0 +1,46 @@
+* {
+  border: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+  font-size: 35px;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    background-color: #20474d;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    background-color: #52b788;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: #c4ab97;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    background-color: #cdb4db;
+  }
+}
+#size {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 35px;
+}/*# sourceMappingURL=style.css.map */

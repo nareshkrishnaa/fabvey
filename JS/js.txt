@@ -50,3 +50,27 @@ Conditional operator / ternary operator
 JS uses dynamic typing. User need'nt provide the type of the data during declaration
 
 undefined,null,NaN(not a number)isNaN(a);
+
+
+-----------------------------------------------------------------------------
+3rd October
+-----------------------------------------------------------------------------
+js arrays
+
+Array methods
+
+push pop find findindex find lastindex foreach filter map reduce shift unshift slice sort includes concat
+		
+---------
+callback, foreach, anonymous function in js
+		
+		
+----------------------------------------------------------------
+4th October
+----------------------------------------------------------------
+array filter
+reduce
+object-array
+
+		
+			

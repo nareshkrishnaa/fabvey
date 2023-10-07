@@ -1,0 +1,148 @@
+// first breakpoint at 1000px
+
+*{
+    border:0;
+    padding:0;
+    box-sizing: border-box;
+
+    body{
+        font-family: sans-serif;
+    }
+}
+
+
+.header{
+    text-align: center;
+    font-size: 5vw;
+  
+}
+
+.body{
+    &__intro{
+        margin: 1vw;
+        padding: 1vw;
+        // border: 2px solid rebeccapurple;
+    }
+
+    &__container{
+        background-color: rgba(243, 243, 214, 0.874);
+        margin: 1vw;
+        padding: 1vw;
+        // border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+
+        &__firstbox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+        }
+
+        &__card{
+            background-color: #ede5e5;
+            margin: 1%;
+            padding: 1%;
+            width: 50%;
+            border-radius: 2%;
+            box-shadow: 1px 1px 1px 1px #888888;
+
+            &-image>img{
+                width:100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1000px){
+    .header{
+        text-align: center;
+        font-size: 5vw;
+       
+    }
+    
+    .body{
+        &__intro{
+            margin: 1vw;
+            padding: 1vw;
+            // border: 2px solid rebeccapurple;
+        }
+    
+        &__container{
+            background-color: rgba(243, 243, 214, 0.874);
+            margin: 2vw;
+            padding: 3vw;
+            // border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+    
+            &__firstbox{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+    
+            &__card{
+                background-color:#ede5e5;
+                margin: 3%;
+                padding: 3%;
+                width: 50%;
+                border-radius: 2%;
+                box-shadow: 5px 5px 5px 5px #888888;
+    
+                &-image>img{
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:650px){
+    .header{
+        text-align: center;
+        font-size: 5vw;
+        
+    }
+    
+    .body{
+        &__intro{
+            margin: 1vw;
+            padding: 1vw;
+            // border: 2px solid rebeccapurple;
+        }
+    
+        &__container{
+            background-color: rgba(243, 243, 214, 0.874);
+            margin: 2vw;
+            padding: 3vw;
+            // border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+    
+            &__firstbox{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            &__card{
+                background-color: #ede5e5;
+                margin: 3%;
+                padding: 3%;
+                width: 75%;
+                border-radius: 2%;
+                box-shadow: 5px 5px 5px 5px #888888;
+
+    
+                &-image>img{
+                    width:100%;
+                }
+            }
+        }
+    }
+}

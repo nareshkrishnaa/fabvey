@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let a=2;
+        let b=3;
+
+        swap(a,b);
+
+        function swap(a,b){
+            let temp=a;
+            let s1="Values of a and b before swapping "+a+" "+b;
+            document.write(s1);
+            a=b;
+            b=temp;
+            let s2="Values of a and b after swapping "+a+" "+b;
+            document.write("<br>");
+            document.write(s2);
+        }
+    </script>
+    
+</body>
+</html>
