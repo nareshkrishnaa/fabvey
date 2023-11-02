@@ -1,0 +1,94 @@
+/**
+ * Pagebuilder -> sections -> ImageWithCaptions -> Captions
+ */
+
+/**
+* Media queries
+*/
+
+/* Universal */
+
+/* Custom */
+
+.Captions-module--caption__item--53c3b {
+  display: inline-flex;
+  align-items: center;
+  padding: calc(var(--gutter)/1.5);
+  box-shadow: var(--box-shadow-medium);
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-fill-default);
+  z-index: 25;
+  width: 100%;
+  max-width: 300px;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: opacity 0.2s, -webkit-transform 0.3s;
+  transition: opacity 0.2s, transform 0.3s;
+  transition: opacity 0.2s, transform 0.3s, -webkit-transform 0.3s;
+  color: var(--color-text-default);
+}
+
+.Captions-module--caption__item--53c3b:nth-child(even) {
+    right: 0;
+  }
+
+.Captions-module--caption__item--53c3b:nth-child(odd) {
+    left: 0;
+  }
+
+.Captions-module--caption__item--53c3b:nth-child(1) {
+    bottom: 3rem;
+    transition-delay: 0.2s;
+  }
+
+.Captions-module--caption__item--53c3b:nth-child(2) {
+    bottom: 1.5rem;
+    transition-delay: 0.4s;
+  }
+
+.Captions-module--caption__item--53c3b:nth-child(3) {
+    top: 2rem;
+    transition-delay: 0.1s;
+  }
+
+.Captions-module--caption__item--53c3b:nth-child(4) {
+    top: 3rem;
+    transition-delay: 0.3s;
+  }
+
+.Captions-module--caption__item__start--9de11 {
+  margin-right: calc(var(--gutter)/1.5);
+}
+
+.Captions-module--captionsVisible--25efb .Captions-module--caption__item--53c3b {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/**
+ * Responsive
+ */
+
+@media (min-width: 1024px) {
+  .Captions-module--caption__item--53c3b {
+    position: absolute;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Captions-module--captions--36918 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(var(--gutter)*-2);
+    padding: 0 var(--gutter);
+  }
+
+  .Captions-module--caption__item--53c3b {
+    margin-bottom: calc(var(--gutter)/2);
+    max-width: 350px;
+  }
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light-theme{
+            background-color: white;
+            color: black;
+        }
+        .dark-theme{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam nihil magni voluptates exercitationem doloremque dolores sit est provident totam cum quaerat, labore illum, ad quasi amet quis, nesciunt quisquam!</p>
+    <button id="btn">change theme</button>
+
+    <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            let currentTheme = localStorage.getItem("theme");
+            let bodyElement = document.getElementById("body");
+            if(currentTheme=="light"){
+                bodyElement.classList.remove("dark-theme");
+                bodyElement.classList.add("light-theme");
+                localStorage.setItem("theme","light");     
+            }else{
+                bodyElement.classList.remove("light-theme");
+                bodyElement.classList.add("dark-theme");
+                localStorage.setItem("theme","dark");
+            }
+            
+        });
+
+
+        let buttonclick = document.getElementById("btn");
+        buttonclick.addEventListener("click",myfunction);
+
+        function myfunction(){
+            let currentTheme = localStorage.getItem("theme");
+            let bodyElement = document.getElementById("body");
+            if(currentTheme=="light"){
+                bodyElement.classList.remove("light-theme");
+                bodyElement.classList.add("dark-theme");
+                localStorage.setItem("theme","dark");
+
+                
+            }else{
+                bodyElement.classList.remove("dark-theme");
+                bodyElement.classList.add("light-theme");
+                localStorage.setItem("theme","light");
+            }
+        }
+    </script>
+</body>
+</html>

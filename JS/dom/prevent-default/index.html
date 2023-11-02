@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Prevent default</h1>
+
+        <input type="checkbox" name="" id="btn">
+
+        
+        
+    </div>
+ 
+    <script>
+       
+
+        document.getElementById("btn").addEventListener("click",function(event){event.preventDefault()});
+
+
+
+        
+
+    </script>
+</body>
+</html>

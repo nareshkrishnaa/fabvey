@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <button id="btn">Click to change background</button>
+    </div>
+
+
+    <script>
+        let arr = ["violet", "indigo", "blue", "green", "yellow", "orange", "red"];
+
+        for (const color of arr) {
+            console.log(color);
+        }
+
+        let button = document.getElementById("btn").addEventListener("click",randomColor);
+        function randomColor(){
+            let randomNumber = Math.floor(7* Math.random());
+            let randomColor = arr[randomNumber];
+            let container = document.getElementById("container");
+            container.style.backgroundColor =randomColor;
+            console.log(randomNumber +" "+randomColor);
+        }
+
+    </script>
+</body>
+
+</html>

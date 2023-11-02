@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Initially hide the dropdown-content1 */
+.dropdown-content1 {
+    display: none;
+}
+
+/* When hovering over the dropdown-activation, show the dropdown-content1 */
+
+.dropdown-content1:hover {
+    display: block;
+}
+
+.dropdown-activation:hover+.dropdown-content1 {
+    display: flex;
+}
+
+
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./images/hero-bg.png");
+    background-size: cover;
+    /* This property scales the background image to cover the entire div */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-position: center center;
+    /* Centers the background image both horizontally and vertically */
+
+    .navcontainer {
+        display: flex;
+        position: relative;
+
+        flex-direction: row;
+        padding-top: 20px;
+        padding-left: 3%;
+        padding-right: 3%;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon1 {
+
+            font-size: 32px;
+            fill: rgb(13, 191, 237);
+        }
+
+        .icon2 {
+            width: 10vw;
+            display: none;
+            fill: rgb(13, 191, 237);
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        .navcontent {
+            width: 70%;
+            font-size: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+
+
+
+            .dropdown-column {
+                display: flex;
+                flex-direction: column;
+
+                .dropdown-activation:hover~.navcontainer {
+                    display: flex;
+                    align-items: flex-start;
+                }
+
+
+                .dropdown-content1 {
+                    background-color: white;
+                    opacity: 100%;
+                    z-index: 100;
+                    border: solid 1px black;
+                    width: 150px;
+                    flex-direction: column;
+
+                    .list1 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: blue;
+                        margin-bottom: 10px;
+                        padding: 5px 0px;
+                    }
+
+                    .list1:hover {
+                        color: violet;
+                    }
+                }
+
+
+
+            }
+        }
+
+        .getstarted-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 40px;
+            background: #4154f1;
+            padding: 8px 20px;
+            margin-left: 30px;
+            border-radius: 4px;
+            color: #fff;
+        }
+
+
+    }
+
+
+    .header-content {
+        width: vw;
+        position: absolute;
+        top: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .introduction {
+            width: 40%;
+
+            .line-1 {
+                font-size: 48px;
+                font-weight: 700;
+                color: #012970;
+            }
+
+            .line-2 {
+                color: #444444;
+                margin: 15px 0 0 0;
+                font-size: 26px;
+                margin-bottom: 40px;
+            }
+
+            .getstarted-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 40px;
+                margin-top: 30px;
+                border-radius: 4px;
+                transition: 0.5s;
+                color: #fff;
+                background: #4154f1;
+                box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+            }
+        }
+
+        .image {}
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    .header {
+
+        .navcontainer {
+            display: flex;
+
+            .icon1 {}
+
+            .icon2 {}
+
+            .menu-icon {
+                display: block;
+
+            }
+
+            .navcontent {
+                display: none;
+
+                .dropdown-column {
+                    .dropdown-activation {}
+
+                    .dropdown-content1 {
+                        .list1 {}
+                    }
+                }
+            }
+
+            .getstarted-box {}
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+
+            .introduction {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+
+                .line-1 {}
+
+                .line-2 {}
+
+                .getstarted-box {
+                    align-self: center;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .image {}
+        }
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+    .header {
+        position: relative;
+        background-image: url("./images/hero-bg.png");
+
+        .navcontainer {
+            display: flex;
+
+            .icon1 {}
+
+            .icon2 {}
+
+            .navcontent {
+                .dropdown-column {
+                    .dropdown-activation {}
+
+                    .dropdown-content1 {
+                        .list1 {}
+                    }
+                }
+            }
+
+            .getstarted-box {}
+        }
+
+        .header-content {
+            .introduction {
+                width: 80%;
+
+                .line-1 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: #012970;
+                }
+
+                .line-2 {}
+
+                .getstarted-box {}
+            }
+
+            .image {}
+        }
+    }
+
+}

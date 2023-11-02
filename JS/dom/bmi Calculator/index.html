@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator-outline">
+            <div class="header">
+                <div class="logo">
+                    <img src="./images/Component21.svg" alt="BMI logo" title="BMI logo">
+                </div>
+                <div class="title">
+                    <h1>BMI Calculator</h1>
+                    <h2>Body Mass Index</h2>
+                </div>
+            </div>
+
+            <div class="input">
+                <div class="height">
+                  <label for="">Height</label>
+                </div>
+                <input type="number" placeholder="Enter height in cms" id="height">
+                <div id="height-error">
+
+                </div>
+            </div>
+           
+
+            <div class="input">
+                <div class="height">
+                  <label for="">Weight</label>
+                </div>
+                <input type="number" placeholder="Enter Weight in kg" id="weight">
+                <div id="weight-error">
+                    
+                </div>
+            </div>
+
+            <div class="submit-row">
+                <div class="submit" id="submit">
+                    Submit
+                </div>
+            </div>
+
+            <div class="result-div">
+                <h2>
+                    Result : <strong id="result">  </strong>
+                </h2>
+                
+                <div class="range-container">
+                    <div class="range">
+                        <div>
+                            Underweight
+                        </div>
+                        <div>
+                            Normal
+                        </div>
+                        <div>
+                            OverWeight
+                        </div>
+
+                    </div>
+                </div>
+                <div class="color-container">
+                    <div class="color">
+                        <div>
+                            <div id="yellow">
+                            
+                            </div>
+                        </div>
+
+                        <div>
+                            <div id="green">
+                            
+                            </div>  
+                        </div>
+
+                        <div>
+                            <div id="red">
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+
+
+
+
+        </div>
+
+    </div>
+<script src="./main.js"></script>
+</body>
+
+</html>

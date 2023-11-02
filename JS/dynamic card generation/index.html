@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .card-container {
+            display: flex;
+        }
+        
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="myfunction()" id="btn"> Dynamic Card Generation</button>
+    <div class="card-container" id="card-container">
+    </div>
+
+    <script>
+       function myfunction(){
+        let button = document.getElementById("btn");
+        button.style.display="none";
+         
+         const cardArray = [
+            {
+                image: './images/img1.png',
+                title: 'Idli shop',
+                description: 'This is the description for Idli shop.',
+            },
+            {
+                image: './images/img2.png',
+                title: 'Tea shop',
+                description: 'This is the description for Tea shop.',
+            },
+            {
+                image: './images/img3.png',
+                title: 'Dosa shop',
+                description: 'This is the description for Dosa shop.',
+            },
+            {
+                image: './images/img4.png',
+                title: 'Sandwich shop',
+                description: 'This is the description for Sandwich shop.',
+            }
+        ];
+
+        const cardContainer = document.getElementById('card-container');
+
+       
+        cardArray.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.className = 'card';
+
+            const cardImage = document.createElement('img');
+            cardImage.src = card.image;
+            cardImage.alt = `${card.title} Image`;
+
+            const cardTitle = document.createElement('h2');
+            cardTitle.textContent = card.title;
+
+            const cardDescription = document.createElement('p');
+            cardDescription.textContent = card.description;
+
+            cardElement.appendChild(cardImage);
+            cardElement.appendChild(cardTitle);
+            cardElement.appendChild(cardDescription);
+
+            cardContainer.appendChild(cardElement);
+        });
+       }
+    </script>
+</body>
+</html>

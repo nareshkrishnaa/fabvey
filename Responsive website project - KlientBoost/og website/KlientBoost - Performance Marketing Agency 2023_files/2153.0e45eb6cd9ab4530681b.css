@@ -1,0 +1,169 @@
+/**
+ * Components -> Card
+ */
+
+.Card-module--root--f0942 {
+  background-color: var(--color-fill-default);
+  padding: var(--gutter);
+}
+
+.Card-module--noPadding--0cc94 {
+  padding: 0;
+}
+
+/* Border radius sizes */
+
+.Card-module--border_radius_small--e1760 {
+  border-radius: var(--border-radius-small);
+}
+
+.Card-module--border_radius_medium--bca39 {
+  border-radius: var(--border-radius-medium);
+}
+
+.Card-module--border_radius_large--92a24 {
+  border-radius: var(--border-radius-large);
+}
+
+/* Box Shadow */
+
+.Card-module--box_shadow_small--33577 {
+  box-shadow: var(--box-shadow-small);
+}
+
+.Card-module--box_shadow_medium--6393f {
+  box-shadow: var(--box-shadow-medium);
+}
+
+.Card-module--box_shadow_large--52d9d {
+  box-shadow: var(--box-shadow-large);
+}
+
+/* Background Color */
+
+.Card-module--background_color_lightgray--e2d6d {
+  background-color: var(--color-gray-4);
+}
+
+.Card-module--background_color_white--3d1ea {
+  background-color: #fff;
+}
+
+/**
+ * ClientsList
+ */
+
+.ClientsList-module--root--db6dd {
+  padding: calc(var(--gutter)*3);
+}
+
+.ClientsList-module--textBelow--60fea {
+  margin-top: calc(var(--gutter)*3);
+}
+
+.ClientsList-module--list__header--e3f81,
+.ClientsList-module--list__row--2f3c5 {
+  display: flex;
+  align-items: center;
+}
+
+.ClientsList-module--list__column--15bb8 {
+  flex-grow: 0;
+  padding: var(--gutter);
+}
+
+.ClientsList-module--list__column__company--e5ca2 {
+  flex: 15% 0;
+}
+
+.ClientsList-module--list__column__company__logo--a925d {
+  /* max-width: 150px; */
+}
+
+.ClientsList-module--list__column__status--94154 {
+  flex: 40% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ClientsList-module--list__column__status__label__mobile--48688 {
+  display: none;
+}
+
+.ClientsList-module--list__column__outcome--e731e {
+  flex: 20% 0 1;
+}
+
+.ClientsList-module--list__column__cta--748f5 {
+  flex: 1 0;
+  text-align: right;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.1rem;
+}
+
+.ClientsList-module--statusBadge--840e3 {
+  background-color: var(--color-success);
+  color: var(--color-text-light);
+  border-radius: var(--border-radius-medium);
+  padding: calc(var(--gutter)/2) var(--gutter);
+  min-width: 145px;
+  display: flex;
+  justify-content: center;
+}
+
+.ClientsList-module--statusBadge--840e3.ClientsList-module--raised_funds--6f1e1 {
+    opacity: 0.75;
+  }
+
+@media (--viewport-4-down) {
+  .ClientsList-module--list__column--15bb8 {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .ClientsList-module--ctaLabel--f65a3 {
+    display: none;
+  }
+  .ClientsList-module--root--db6dd {
+    padding: calc(var(--gutter)*2) var(--gutter);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ClientsList-module--list__column__status__label__mobile--48688 {
+    display: inline;
+  }
+  .ClientsList-module--list__column__status__label__desktop--bf656 {
+    display: none;
+  }
+  .ClientsList-module--list__column__outcome--e731e {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .ClientsList-module--list__column__status--94154 {
+    flex: 125px 0;
+  }
+
+  .ClientsList-module--list__column__company--e5ca2 {
+    flex: 1 0;
+  }
+
+  .ClientsList-module--list__column--15bb8 {
+    padding: calc(var(--padding)/2);
+  }
+
+  .ClientsList-module--list__column__cta--748f5 {
+    flex: 30px 0;
+  }
+
+  .ClientsList-module--list__row--2f3c5 {
+    margin-top: var(--gutter);
+  }
+
+  .ClientsList-module--statusBadge--840e3 {
+    font-size: 0.7rem;
+    min-width: 0;
+  }
+}
+

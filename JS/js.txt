@@ -72,5 +72,27 @@ array filter
 reduce
 object-array
 
+-----------------------------------------------------------------
+17th October
+-----------------------------------------------------------------
+Events
+->on load
+->on click
+->on double click
+->on hover
+->refresh
+
+
+Event listeners :
+
+
+
+
+
+
+
+
+
+
 		
 			

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation Example</title>
+    <script>
+        function validateForm() {
+            var name = document.forms["registrationForm"]["name"].value;
+            var email = document.forms["registrationForm"]["email"].value;
+            var password = document.forms["registrationForm"]["password"].value;
+
+            // Initialize error messages to empty strings
+            var nameError = "";
+            var emailError = "";
+            var passwordError = "";
+
+            // Name validation
+            if (name === "") {
+                nameError = "Name is required";
+            }
+
+            // Email validation using a simple regex pattern
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!email.match(emailPattern)) {
+                emailError = "Invalid email address";
+            }
+
+            // Password validation: Checking if it's at least 6 characters
+            if (password.length < 6) {
+                passwordError = "Password must be at least 6 characters";
+            }
+
+            // Display error messages, if any
+            document.getElementById("nameError").innerHTML = nameError;
+            document.getElementById("emailError").innerHTML = emailError;
+            document.getElementById("passwordError").innerHTML = passwordError;
+
+            // Prevent form submission if there are errors
+            if (nameError || emailError || passwordError) {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form name="registrationForm" onsubmit="return validateForm()" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <span id="nameError" style="color: red;"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+        <span id="emailError" style="color: red;"></span><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+        <span id="passwordError" style="color: red;"></span><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

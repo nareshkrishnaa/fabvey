@@ -1,0 +1,7 @@
+today task - use storage instead of toggle in chainging dark light theme
+background - change random colour from a list of bg colours when button clicked
+like counter task
+prevent default
+clear remove storage
+
+form validation

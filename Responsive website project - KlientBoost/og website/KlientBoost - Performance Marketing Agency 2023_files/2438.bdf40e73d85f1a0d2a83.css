@@ -1,0 +1,272 @@
+/**
+ * Pagebuilder -> sections -> GrapplingHook
+ */
+
+.GrapplingHook-module--section--cb0e3 {
+  z-index: 100;
+}
+
+.GrapplingHook-module--mobileImage--a819d {
+  max-width: 550px;
+  padding: 0 calc(var(--gutter)*3);
+  margin: 2rem auto 4rem auto;
+}
+
+/* :root {
+  --illustration-width: 225px;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.wrapper {
+  padding-top: 75%;
+  width: 100%;
+  position: relative;
+}
+
+.wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.hook {
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+  width: 6%;
+  transition: top 0.5s;
+
+  & img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.hook__leftClaw,
+.hook__rightClaw {
+  position: absolute;
+  margin-top: -85%;
+  width: 100%;
+  transform-origin: top center;
+  z-index: -1;
+  transition: transform 0.2s;
+}
+
+.hook__rightClaw {
+  left: 25%;
+  transform: rotate(-15deg);
+}
+
+.hook__leftClaw {
+  left: -25%;
+  transform: rotate(15deg);
+}
+
+.box {
+  position: absolute;
+  padding-bottom: 17.13%;
+  bottom: 2px;
+  left: 4%;
+  width: 45%;
+
+  & img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.box__bottom {
+  z-index: 10;
+}
+
+.box__left,
+.box__right {
+  width: 50%;
+  bottom: 127%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.box__left {
+  left: -7.4%;
+  z-index: -1;
+}
+
+.box__right {
+  right: -7.8%;
+  z-index: 10;
+}
+
+.objects__item {
+  position: absolute;
+  width: 24%;
+  opacity: 0;
+  margin-top: 100%;
+  transition: opacity 0.2s;
+
+  &:nth-child(1) .objects__item__illustration {
+    transition-delay: 0.1s;
+  }
+  &:nth-child(2) .objects__item__illustration {
+    transition-delay: 0.15s;
+  }
+  &:nth-child(3) .objects__item__illustration {
+    transition-delay: 0.2s;
+  }
+  &:nth-child(4) .objects__item__illustration {
+    transition-delay: 0.4s;
+  }
+  &:nth-child(5) .objects__item__illustration {
+    transition-delay: 0.1s;
+  }
+  &:nth-child(6) .objects__item__illustration {
+    transition-delay: 0.3s;
+  }
+  &:nth-child(7) .objects__item__illustration {
+    transition-delay: 0.25s;
+  }
+}
+
+.objects__item__illustration {
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+/**
+ * Animations
+ */
+
+/* .animateBox {
+  & .box__left,
+  & .box__right {
+    opacity: 1;
+  }
+  & .box__left {
+    transition-delay: 0.2s;
+  }
+}
+
+.animatePeopleIn {
+  & .objects__item {
+    opacity: 1;
+    margin-top: 0;
+  }
+  & .objects__item__illustration {
+    transform: translateY(0);
+  }
+}
+
+.animateShakeBox {
+  & .box__bottom {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.animateClawClose {
+  & .hook__rightClaw,
+  & .hook__leftClaw {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .wrapper {
+    padding-top: 0;
+  }
+
+  .header {
+    position: static;
+    margin-top: calc(var(--gutter) * 3);
+  }
+
+  .hook {
+    display: none;
+  }
+
+  .wrap {
+    position: relative;
+    max-height: 40vw;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+    transform: translate(23%, -39.3%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    height: 200px;
+    width: 270px;
+    margin: auto;
+    max-height: 100%;
+  }
+  .inner {
+    width: 510px;
+    padding-top: 0;
+    transform: translate(0%, -38.8%);
+    height: 330px;
+  }
+}  */
+

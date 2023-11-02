@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-text {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <p id="para">
+        Color changes to red when button is clicked
+    </p>
+    <button id="button">
+        click me
+    </button>
+
+
+    <script>
+
+
+        let button = document.getElementById("button");
+        button.addEventListener("click", function () {
+            document.getElementById("para").classList.toggle("red-text");
+        });
+    </script>
+</body>
+
+</html>

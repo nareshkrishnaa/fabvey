@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark-theme{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam nihil magni voluptates exercitationem doloremque dolores sit est provident totam cum quaerat, labore illum, ad quasi amet quis, nesciunt quisquam!</p>
+    <button id="btn">change theme</button>
+
+    <script>
+        let buttonclick = document.getElementById("btn");
+        buttonclick.addEventListener("click",myfunction);
+
+        function myfunction(){
+            document.getElementById("body").classList.toggle("dark-theme");
+        }
+    </script>
+</body>
+</html>

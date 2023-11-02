@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+}
+
 /* style for banner section starts */
 
 .banner {
@@ -462,6 +466,16 @@ gap:4px;
   padding-left: 3%;
   padding-right: 3%;
   padding-top:50px ;
+}
+
+/* card section */
+
+.card-section{
+  width: 100%;
+}
+
+.card-section-container{
+
 }
 
 
