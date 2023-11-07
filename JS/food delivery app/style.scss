@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.section{
+    width: 100%;
+    height:3rem;
+    margin-top: 5px;
+    .navcontainer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      margin-top: 5px;
+
+        .navrow{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+          margin-top: 100px;
+
+            .navcol{
+          margin-top: 100px;
+              
+            }
+        }
+    }
+}
+
+img.logo{
+    height: 60px;
+    margin-top: 5px;
+
+}

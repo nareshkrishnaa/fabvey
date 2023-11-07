@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let diff13 = function (num) {
+            let diff = num - 13;
+            if (diff < 0) {
+                diff = diff * (0 - 1);
+            }
+
+            if (diff > 13) {
+                return 2 * diff;
+            } else {
+                return diff;
+            }
+        }
+
+        console.log(diff13(28));
+    </script>
+</body>
+
+</html>
