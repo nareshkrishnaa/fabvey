@@ -15,22 +15,18 @@
     <h4 id="result"></h4>
 
     <script>
-        function myFunction() {
-            let random = Math.floor(Math.random() * 10) + 1;
-            let enteredNumber = document.getElementById("num").valueAsNumber;
+        const myFunction = () => {
+            const random = Math.floor(Math.random() * 10) + 1;
+            const enteredNumber = document.getElementById("num").valueAsNumber;
             console.log(enteredNumber);
-            let str = "The random number was " + random;
-            if (random == enteredNumber) {
-                let resultString = str + " - success";
+            const str = "Good Work ! The random number was " + random;
+            if (random === enteredNumber) {
+                const resultString = str + " - success";
                 document.getElementById("result").innerHTML = resultString;
             } else {
-                let resultString = str + " - failure";
+                const resultString = str + " - failure";
                 document.getElementById("result").innerHTML = resultString;
-
-
-
             }
-
         }
     </script>
 

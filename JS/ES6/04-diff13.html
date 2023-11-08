@@ -10,20 +10,17 @@
 <body>
 
     <script>
-        let diff13 = function (num) {
+        const diff13 = (num) => {
             let diff = num - 13;
             if (diff < 0) {
-                diff = diff * (0 - 1);
+                diff = diff * (-1);
             }
 
-            if (diff > 13) {
-                return 2 * diff;
-            } else {
-                return diff;
-            }
+            return diff > 13 ? 2 * diff : diff;
         }
 
         console.log(diff13(28));
+
     </script>
 </body>
 
