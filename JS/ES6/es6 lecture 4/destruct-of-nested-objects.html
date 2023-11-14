@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("---------------")
+        console.log("Destructuring nested objects")
+        console.log("---------------")
+
+        let employee = {
+            personalDetails: {
+                name: "Hari",
+                dob: "02-04-1988",
+                degree: "BE"
+            },
+
+            officialDetails: {
+                department: "Automation",
+                role: "Tester",
+                experience: 3,
+                achievements: {
+                    awards: 10,
+                    certification: ["Course 1", "Course 2", "Course3"]
+                }
+            }
+
+        }
+
+        let { personalDetails: { name, dob, degree }, officialDetails: { department, role, experience, achievements: { awards, certification: [c1, c2] } } } = employee;
+
+        console.log(employee)
+        console.log(name)
+        console.log(dob)
+        console.log(degree)
+        console.log(department)
+        console.log(role)
+        console.log(experience)
+        console.log(awards)
+        console.log(c1)
+        console.log(c2)
+
+        // console.log(officialDetails)
+        // console.log(achievements)
+        // console.log(certification)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
