@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // The find() method returns the value of the first element that passes a test.
+
+        // The find() method executes a function for each array element.
+
+        // The find() method returns undefined if no elements are found.
+
+        // The find() method does not execute the function for empty elements.
+
+        // The find() method does not change the original array.
+
+
+        let foundDogs = [{
+            breed: "Beagle",
+            color: "white"
+        },
+
+        {
+            breed: "Chihuahua",
+            color: "yellow"
+        },
+
+        {
+            breed: "Pug",
+            color: "black"
+        },
+        ]
+
+        function findMyDog(dog) {
+            return dog.breed === "Pug"
+        }
+
+        let myDog = foundDogs.find(dog => findMyDog(dog));
+
+        console.log(myDog);
+
+
+        let numbers = [1, 3, 5, 2, 4, 6];
+
+        let firstEven = numbers.find(function (element) {
+            return element % 2 === 0;
+        });
+
+        console.log(firstEven);
+
+
+        let greaterThanTen = numbers.find(function (element) {
+            return element > 10;
+        });
+    </script>
+
+</body>
+
+</html>

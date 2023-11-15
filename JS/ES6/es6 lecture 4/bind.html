@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // // Define a function
+        // function greet(name) {
+        //     return "Hello, " + name + "!";
+        // }
+
+        // // Assign the function to a variable
+        // const greetingFunction = greet;
+
+        // // Call the function using the variable
+        // const result = greetingFunction("Alice");
+
+        // // Print the result
+        // console.log(result);
+
+
+        const student1 = {
+            name: 'Pedro',
+            surname: 'Sanchez',
+            sayName: function () {
+                return this.name + " " + this.surname
+            }
+        }
+
+        const student2 = {
+            name: 'Jimena',
+            surname: 'Juarez'
+        }
+
+        const sayStudent2Name = student1.sayName.bind(student2)
+
+        console.log(sayPerson2Name())
+    </script>
+</body>
+
+</html>

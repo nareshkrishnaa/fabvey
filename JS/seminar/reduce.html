@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue);
+
+        // let numbers = [1, 2, 3, 4, 5];
+
+        // // Using reduce to sum all elements in the array
+        // let sum = numbers.reduce(function (accumulator, currentValue) {
+        //     return accumulator + currentValue;
+        // }, 0); // 0 is the initial value for the accumulator
+
+        // console.log(sum); // Output: 15 (1 + 2 + 3 + 4 + 5)
+
+
+
+        let arrNum = [1, 2, 3, 4, 5]
+        function sumOfEle(accu, curr) {
+            return accu + curr;
+        }
+        let arrNum2 = arrNum.reduce(sumOfEle)
+        console.log(arrNum2)
+
+
+    </script>
+</body>
+
+</html>

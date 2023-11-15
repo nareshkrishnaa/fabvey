@@ -10,24 +10,111 @@
 <body>
 
     <script>
+        // Using only Current Element
+        array.forEach((currentElement) => { /* ... */ })
+        array.forEach(function (currentElement) { /* ... */ })
 
-        // let sum = 0;
-        // const numbers = [65, 44, 12, 4];
-        // numbers.forEach(myFunction);
+        // Using only Current Element and Index
+        array.forEach((currentElement, index) => { /* ... */ })
+        array.forEach(function (currentElement, index) { /* ... */ })
 
-        // function myFunction(item) {
-        //     sum += item;
+        // Using only Current Element, Index and array
+        array.forEach((currentElement, index, array) => { /* ... */ })
+        array.forEach(function (currentElement, index, array) { /* ... */ })
+
+        // Using all parameters with thisValue (value of this in the callback) 
+        array.forEach((currentElement, index, array) => { /* ... */ }, thisValue)
+        array.forEach(function (currentElement, index, array) { /* ... */ }, thisValue)
+
+        const staffsDetails = [
+            { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
+            { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
+            { name: "Chris Colt", age: 37, salary: 3700, currency: "USD" },
+            { name: "Jane Doe", age: 24, salary: 4200, currency: "USD" }
+        ];
+
+
+        // staffsDetails.forEach((staffDetail) => {
+        //     let sentence = `I am ${staffDetail.name} a staff of Royal Suites.`;
+        //     console.log(sentence);
+        // });
+
+        // staffsDetails.forEach(({ name }, index) => {
+        //     let sentence = `I am ${name} a staff of Royal Suites.`;
+        //     console.log(sentence);
+        // });
+
+        // staffsDetails.forEach((staffDetail, index) => {
+        //     let sentence = `index ${index} : I am ${staffDetail.name} a staff of Royal Suites.`;
+        //     console.log(sentence);
+        // });
+
+        let scores = [12, 55, 70, 47];
+
+        // scores.forEach((score, index, array) => {
+        //     console.log(array);
+        // });
+
+        //How to Add All Values in An Array of Numbers with forEach()
+
+
+        // let total = 0;
+        // scores.forEach((score) => {
+        //     total += score;
+        // });
+        // console.log(total);
+
+        // let totalSalary = 0;
+        // staffsDetails.forEach(({ salary }) => {
+        //     totalSalary += salary;
+        // });
+
+        // console.log(totalSalary + " USD"); // "14900 USD"
+
+        //Break out and continue in a Loop
+
+
+        // scores.forEach((score) => {
+        //     console.log(score);
+
+        //     if (score === 70)
+        //         break;
+        // });
+
+
+        // scores.forEach((score) => {
+        //     if (score === 70)
+        //         continue;
+
+        //     console.log(score);
+        // });
+
+        // for (i = 0; i < scores.length; i++) {
+        //     console.log(scores[i]);
+
+        //     if (scores[i] === 70)
+        //         break;
         // }
 
-        // const numbers = [65, 44, 12, 4];
-        // numbers.forEach(myFunction)
-        // console.log(numbers)
 
-        // function myFunction(item, index, arr) {
-        //     arr[index] = item * 10;
+        // for (i = 0; i < scores.length; i++) {
+        //     if (scores[i] === 70)
+        //         continue;
+
+        //     console.log(scores[i]);
         // }
 
+        //Array with Missing elements
 
+        const studentsScores = [70, , 12, 55, , 70, 47];
+
+        // for (i = 0; i < studentsScores.length; i++) {
+        //     console.log(studentsScores[i]);
+        // }
+
+        // studentsScores.forEach((stundentScore) => {
+        //     console.log(stundentScore);
+        // });
 
     </script>
 </body>
