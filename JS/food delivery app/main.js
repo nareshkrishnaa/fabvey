@@ -148,11 +148,11 @@ function createDynamicMenuAtModal(food, restaurantName) {
 
   const card = document.createElement("div");
   card.classList.add("card");
-  card.style.width = "18rem";
-  card.style.height = "30rem";
+  card.style.width = "24rem";
+  card.style.height = "34rem";
 
   card.innerHTML = `
-    <img src="${food.url}" class="card-img-top card-img-top" alt="..." style="height:18rem">
+    <img src="${food.url}" class="card-img-top card-img-top" alt="..." style="height:24rem">
     <div class="card-body d-flex flex-column mb-3 justify-content-around align-items-center">
       <h5 class="card-title h3">${food.name}</h5>
       <p class="card-text h3">$${food.price}</p>
@@ -467,14 +467,47 @@ function checkout() {
   );
   console.log("food items ");
 
+  function addRow(serialNo, item, quantity, rate, price) {
+    let tableBody = document.getElementById("table-body");
+
+    // Create a new row and cells
+    let newRow = document.createElement("tr");
+    let numberCell = document.createElement("th");
+    let itemCell = document.createElement("td");
+    let quantityCell = document.createElement("td");
+    let rateCell = document.createElement("td");
+    let priceCell = document.createElement("td");
+
+    // Set the content of the cells (you can set your own values)
+    numberCell.textContent = serialNo;
+    itemCell.textContent = item;
+    quantityCell.textContent = quantity;
+    rateCell.textContent = rate;
+    priceCell.textContent = price;
+
+    // Append cells to the new row
+    newRow.appendChild(numberCell);
+    newRow.appendChild(itemCell);
+    newRow.appendChild(quantityCell);
+    newRow.appendChild(rateCell);
+    newRow.appendChild(priceCell);
+
+    // Append the new row to the table body
+    tableBody.appendChild(newRow);
+  }
+
   for (let i = 0; i < restaurantOrder.length; i++) {
     let resName = document.getElementById("staticBackdropLabel").innerHTML;
     if (resName == restaurantOrder[i].name) {
       let menu = restaurantOrder[i].menu;
       let num = 0;
+      let serialNo = 0;
+      let totalBill = 0;
       for (let j = 0; j < menu.length; j++) {
         if (menu[j].count > 0) {
+          serialNo++;
           num++;
+          totalBill += menu[j].price * menu[j].count;
           console.log(
             num +
               "." +
@@ -486,8 +519,40 @@ function checkout() {
               menu[j].count +
               " Nos"
           );
+
+          addRow(
+            serialNo,
+            menu[j].name,
+            menu[j].count,
+            menu[j].price,
+            menu[j].price * menu[j].count
+          );
         }
       }
+
+      let tableBody = document.getElementById("table-body");
+      let newRow = document.createElement("tr");
+      let numberCell = document.createElement("th");
+      let itemCell = document.createElement("td");
+      let quantityCell = document.createElement("td");
+      let rateCell = document.createElement("td");
+      let priceCell = document.createElement("td");
+
+      let boldText = document.createElement("strong");
+      boldText.textContent = totalBill + " $";
+      boldText.classList.add("font-weight-bold");
+
+      numberCell.textContent = "";
+      itemCell.textContent = "";
+      quantityCell.textContent = "";
+      rateCell.textContent = "Total";
+      priceCell.appendChild(boldText);
+      newRow.appendChild(numberCell);
+      newRow.appendChild(itemCell);
+      newRow.appendChild(quantityCell);
+      newRow.appendChild(rateCell);
+      newRow.appendChild(priceCell);
+      tableBody.appendChild(newRow);
     }
   }
 }
