@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*2.Write a JavaScript program to create a class called 'Rectangle' with properties for width and height.
+        Include two methods to calculate rectangle area and perimeter. Create an instance of the 'Rectangle' class and calculate its area and perimeter.
+        */
+
+        class Rectangle {
+            constructor(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+
+            findArea() {
+                return this.length * this.width;
+            }
+
+            findPerimeter() {
+                return 2 * (this.length + this.width);
+            }
+        }
+
+        rectangle = new Rectangle(5, 3);
+        console.log(`Rectangle dimensions : ${rectangle.length}x${rectangle.width} units`);
+        console.log(`Rectangle Area : ${rectangle.findArea()} sq units`);
+        console.log(`Rectangle Perimeter : ${rectangle.findPerimeter()} units`);
+
+
+
+    </script>
+</body>
+
+</html>

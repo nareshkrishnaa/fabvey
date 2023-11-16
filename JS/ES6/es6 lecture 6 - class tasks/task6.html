@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        6.Write a JavaScript program that creates a class Book 
+        with properties for title, author, and publication year. 
+        Include a method to display book details. 
+        Create a subclass called 'Ebook' that inherits from the 
+        'Book' class and includes an additional property for book price.
+         Override the display method to include the book price. 
+         Create an instance of the 'Ebook' class and display its details
+        */
+
+        class Book {
+            constructor(title, author, yop) {
+                this.title = title;
+                this.author = author;
+                this.yop = yop;
+
+                console.log(`Book "${this.title}" created`);
+            }
+
+            display() {
+                let str = `
+                -----------------
+                Book details
+                ------------------
+                Title  : ${this.title}
+                Author : ${this.author}
+                Year   : ${this.yop}
+
+                `;
+                console.log(str);
+
+            }
+        }
+
+        class Ebook extends Book {
+            constructor(title, author, yop, price) {
+                super(title, author, yop);
+                this.price = price;
+                console.log(`EBook "${this.title}" created`);
+
+            }
+
+            display() {
+                let str = `
+                -----------------
+                EBook details
+                ------------------
+                Title  : ${this.title}
+                Author : ${this.author}
+                Year   : ${this.yop}
+                Price  : $${this.price}
+                `;
+                console.log(str);
+
+            }
+        }
+
+        let bk1 = new Book("Time management", "James Clark", 1999);
+        bk1.display();
+
+        let ebk1 = new Ebook("Money Management", "Mike Bradman", 2004, 99);
+        ebk1.display();
+
+    </script>
+</body>
+
+</html>

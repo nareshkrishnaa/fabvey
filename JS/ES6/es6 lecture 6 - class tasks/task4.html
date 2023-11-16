@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*4.Write a JavaScript program that creates a class 
+        called 'Shape' with a method to calculate the area. 
+        Create two subclasses, 'Circle' and 'Triangle', that inherit
+         from the 'Shape' class and override the area calculation method. 
+         Create an instance of the 'Circle' class and calculate its area. 
+         Similarly, do the same for the 'Triangle' class.
+        */
+
+        class Shape {
+            constructor() {
+                console.log("New shape created")
+            }
+
+            findArea() {
+                console.log("Finds area of the shape")
+            }
+        }
+
+        class Circle extends Shape {
+            constructor(radius) {
+                super();
+                this.radius = radius;
+                console.log(`Circle of radius ${this.radius} created`);
+            }
+
+            findArea() {
+                let area = Math.PI * (Math.pow(this.radius, 2));
+                area = area.toFixed(2);
+                console.log(`Area of circle is ${area} sq units`);
+            }
+
+        }
+
+        class Triangle extends Shape {
+            constructor(base, height) {
+                super();
+                this.base = base;
+                this.height = height;
+                console.log(`Triangle of base ${this.base} units and height ${this.height} units created`);
+
+            }
+
+            findArea() {
+                let area = (this.base * this.height) / 2;
+                area = area.toFixed(2);
+                console.log(`Area of triangle is ${area} sq units`);
+            }
+
+        }
+
+        shape = new Shape();
+        shape.findArea();
+        circle = new Circle(10);
+        circle.findArea();
+        triangle = new Triangle(8, 5);
+        triangle.findArea();
+
+    </script>
+</body>
+
+</html>
