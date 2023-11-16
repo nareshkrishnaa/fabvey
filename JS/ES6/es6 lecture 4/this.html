@@ -14,12 +14,19 @@
             firstName: "John",
             lastName: "Doe",
             id: 5566,
+            mark1: 23,
+            mark2: 45,
+            mark3: 88,
             getFullName: function () {
                 return this.firstName + ' ' + this.lastName;
+            },
+            getMark: function () {
+                return this.mark1 + this.mark2 + this.mark3;
             }
         };
 
         console.log('this in object method', student.getFullName());
+        console.log(student.getMark());
 
 
 

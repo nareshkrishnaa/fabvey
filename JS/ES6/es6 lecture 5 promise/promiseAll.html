@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let value1 = 10;
+        let value2 = 20;
+        let value3 = 30;
+        let promiseVariable1 = new Promise((resolve, reject) => {
+            if (value1) {
+                resolve(value1);
+            } else {
+                reject(0)
+            }
+        });
+        let promiseVariable2 = new Promise((resolve, reject) => {
+            if (value2) {
+                resolve(value2);
+            } else {
+                reject(0)
+            }
+        });
+        let promiseVariable3 = new Promise((resolve, reject) => {
+            if (value3) {
+                resolve(value3);
+            } else {
+                reject(0)
+            }
+        });
+
+        Promise.all([promiseVariable1, promiseVariable2, promiseVariable3])
+            .then((arr) => {
+                let sum = 0;
+                for (let i = 0; i < arr.length; i++) {
+                    sum += arr[i];
+                }
+                console.log(sum);
+            })
+            .catch((err) => { console.log(err) })
+    </script>
+
+</body>
+
+</html>
