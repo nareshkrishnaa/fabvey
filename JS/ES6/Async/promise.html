@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const promise = new Promise((resolve, reject) => {
+        //     let num = Math.random();
+        //     num = 0.7
+        //     if (num >= 0.5) {
+        //         resolve("Promise is fulfilled!");
+        //     } else {
+        //         reject("Promise failed!");
+        //     }
+        // });
+
+        // function handleResolve(value) {
+        //     console.log(value);
+        // }
+
+        // function handleReject(reason) {
+        //     console.error(reason + " sucess");
+        // }
+
+        // promise.then(handleReject, handleResolve);
+
+        // Promise.resolve("Successful").then((result) => console.log(result));
+        // // Successful
+
+        // Promise.reject("Not successful").then((result) => console.log(result));
+        // // Error: Uncaught (in promise)
+
+        Promise.reject(new Error("cvxcv")).catch((reason) => console.error(reason));
+    </script>
+</body>
+
+</html>

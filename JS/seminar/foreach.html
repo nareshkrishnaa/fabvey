@@ -10,28 +10,23 @@
 <body>
 
     <script>
-        // Using only Current Element
-        array.forEach((currentElement) => { /* ... */ })
-        array.forEach(function (currentElement) { /* ... */ })
+        // // Using only Current Element
+        // array.forEach((currentElement) => { /* ... */ })
+        // array.forEach(function (currentElement) { /* ... */ })
 
-        // Using only Current Element and Index
-        array.forEach((currentElement, index) => { /* ... */ })
-        array.forEach(function (currentElement, index) { /* ... */ })
+        // // Using only Current Element and Index
+        // array.forEach((currentElement, index) => { /* ... */ })
+        // array.forEach(function (currentElement, index) { /* ... */ })
 
-        // Using only Current Element, Index and array
-        array.forEach((currentElement, index, array) => { /* ... */ })
-        array.forEach(function (currentElement, index, array) { /* ... */ })
+        // // Using only Current Element, Index and array
+        // array.forEach((currentElement, index, array) => { /* ... */ })
+        // array.forEach(function (currentElement, index, array) { /* ... */ })
 
-        // Using all parameters with thisValue (value of this in the callback) 
-        array.forEach((currentElement, index, array) => { /* ... */ }, thisValue)
-        array.forEach(function (currentElement, index, array) { /* ... */ }, thisValue)
+        // // Using all parameters with thisValue (value of this in the callback) 
+        // array.forEach((currentElement, index, array) => { /* ... */ }, thisValue)
+        // array.forEach(function (currentElement, index, array) { /* ... */ }, thisValue)
 
-        const staffsDetails = [
-            { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
-            { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
-            { name: "Chris Colt", age: 37, salary: 3700, currency: "USD" },
-            { name: "Jane Doe", age: 24, salary: 4200, currency: "USD" }
-        ];
+
 
 
         // staffsDetails.forEach((staffDetail) => {
@@ -40,7 +35,7 @@
         // });
 
         // staffsDetails.forEach(({ name }, index) => {
-        //     let sentence = `I am ${name} a staff of Royal Suites.`;
+        //     let sentence = ` I am ${name} a staff of Royal Suites.`;
         //     console.log(sentence);
         // });
 
@@ -49,7 +44,6 @@
         //     console.log(sentence);
         // });
 
-        let scores = [12, 55, 70, 47];
 
         // scores.forEach((score, index, array) => {
         //     console.log(array);
@@ -63,42 +57,51 @@
         //     total += score;
         // });
         // console.log(total);
+        const staffsDetails = [
+            { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
+            { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
+            { name: "Chris Colt", age: 37, salary: 3700, currency: "USD" },
+            { name: "Jane Doe", age: 24, salary: 4200, currency: "USD" }
+        ];
+        let totalSalary = 0;
+        staffsDetails.forEach(({ salary }) => {
+            totalSalary += salary;
+        });
 
-        // let totalSalary = 0;
-        // staffsDetails.forEach(({ salary }) => {
-        //     totalSalary += salary;
-        // });
-
-        // console.log(totalSalary + " USD"); // "14900 USD"
+        console.log(totalSalary + " USD"); // "14900 USD"
 
         //Break out and continue in a Loop
 
 
         // scores.forEach((score) => {
-        //     console.log(score);
+        //     //     console.log(score);
 
-        //     if (score === 70)
-        //         break;
-        // });
+        //     //     if (score === 30)
+        //     //         break;
+        //     // });
 
 
         // scores.forEach((score) => {
-        //     if (score === 70)
+        //     if (score === 30)
         //         continue;
 
         //     console.log(score);
         // });
 
+
+        let scores = [10, 20, 30, 40, 50, 60];
+
+
         // for (i = 0; i < scores.length; i++) {
         //     console.log(scores[i]);
 
-        //     if (scores[i] === 70)
+        //     if (scores[i] === 30)
         //         break;
         // }
 
 
         // for (i = 0; i < scores.length; i++) {
-        //     if (scores[i] === 70)
+        //     if (scores[i] === 30)
         //         continue;
 
         //     console.log(scores[i]);
@@ -112,9 +115,32 @@
         //     console.log(studentsScores[i]);
         // }
 
+        // console.log(`-------------------`);
         // studentsScores.forEach((stundentScore) => {
         //     console.log(stundentScore);
         // });
+
+
+        // Define an array of numbers
+        const numbers = [1, 2, 3, 4, 5];
+
+        // Create an object to use as the value of "this"
+        let multiplierVar = 3;
+        const multiplier = {
+            factor: 2,
+        };
+
+        // Use forEach with thisValue to square each number and store the result in a new array
+        const poweredNumbers = [];
+        numbers.forEach(function (currentNumber, index, array) {
+            // "this" inside this function will refer to the "multiplier" object
+            // const squared = Math.pow(currentNumber, this.factor);
+            const squared = Math.pow(currentNumber, this.factor);
+            poweredNumbers.push(squared);
+        }, multiplier);
+
+        console.log(poweredNumbers);
+
 
     </script>
 </body>

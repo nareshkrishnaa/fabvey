@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Robin, a  small boy from Wonderland, loves to eat pizza.One morning he picks up his mother's phone and orders pizza using the PizzaHub app. Robin selects his favorite cheese barbeque pizza and press the order button.
+
+        // The PizzaHub app registers the order and informs Robin that it will notify him when the pizza is ready and on the way.Robin, the happy boy, waits for a while and finally gets a notification confirming that the pizza is on its way!                So, if we break down the story, the sequence of events goes like this:
+
+        // Robin orders the pizza
+        // The app notes down the order
+        // PizzaHub prepares the pizza, and it is ready after a while.
+        // The app notifies Robin, confirming the pizza is on the way.
+        // The mechanism of notifying Robin about the pizza works by using the callback function.
+
+        // Function to simulate ordering pizza
+
+        function orderPizza() {
+            return new Promise((resolve, reject) => {
+                console.log("1. Robin orders the pizza");
+                setTimeout(() => {
+                    resolve("Pizza ordered");
+                }, 1000);
+            });
+        }
+
+        // Function to simulate noting down the order
+        function noteDownOrder() {
+            return new Promise((resolve, reject) => {
+                console.log("2. The app notes down the order");
+                setTimeout(() => {
+                    resolve("Order noted");
+                }, 1000);
+            });
+        }
+
+        // Function to simulate pizza preparation
+        function preparePizza() {
+            return new Promise((resolve, reject) => {
+                console.log("3. PizzaHub prepares the pizza");
+                setTimeout(() => {
+                    resolve("Pizza prepared");
+                }, 2000);
+            });
+        }
+
+        // Function to simulate notifying Robin
+        function notifyRobin() {
+            return new Promise((resolve, reject) => {
+                console.log("4. The app notifies Robin, confirming the pizza is on the way");
+                setTimeout(() => {
+                    resolve("Notification sent");
+                }, 1000);
+            });
+        }
+
+        // Using promise chaining to represent the sequence of events
+        orderPizza()
+            .then((result) => {
+                console.log(result);
+                return noteDownOrder();
+            })
+            .then((result) => {
+                console.log(result);
+                return preparePizza();
+            })
+            .then((result) => {
+                console.log(result);
+                return notifyRobin();
+            })
+            .then((result) => {
+                console.log(result);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+
+
+
+    </script>
+</body>
+
+</html>

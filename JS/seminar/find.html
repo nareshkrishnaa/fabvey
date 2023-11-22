@@ -43,22 +43,35 @@
         }
 
         let myDog = foundDogs.find(dog => findMyDog(dog));
+        let myDog2 = foundDogs.find(dog => { return dog.breed === "Chihuahua" });
+        let myDog3 = foundDogs.find(dog => { return dog.breed === "Labrador" });
+
+
 
         console.log(myDog);
+        myDog.color = "white";
+        console.log(myDog);
+        console.log(foundDogs)
+        console.log(myDog2);
+        // console.log(myDog3);
 
 
-        let numbers = [1, 3, 5, 2, 4, 6];
+
+
+        let numbers = [1, 3, 100, 6, 7, 2, 4, 5];
 
         let firstEven = numbers.find(function (element) {
             return element % 2 === 0;
         });
-
-        console.log(firstEven);
+        // 
+        // console.log(firstEven);
 
 
         let greaterThanTen = numbers.find(function (element) {
-            return element > 10;
+            return element > 3;
         });
+        greaterThanTen = 1000;
+        console.log(greaterThanTen);
     </script>
 
 </body>

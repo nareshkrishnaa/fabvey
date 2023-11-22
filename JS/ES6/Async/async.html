@@ -9,13 +9,55 @@
 
 <body>
     <script>
-        let greet_one = "Hello"
-        let greet_two = "World!!!"
-        console.log(greet_one)
-        setTimeout(function () {
-            console.log("Asynchronous");
-        }, 10000)
-        console.log(greet_two);
+        // let greet_one = "Hello"
+        // let greet_two = "World!!!"
+        // console.log(greet_one)
+        // setTimeout(function () {
+        //     console.log("Asynchronous");
+        // }, 10000)
+        // console.log(greet_two);
+
+
+        //callback async
+
+        // // Simulating an asynchronous operation with a setTimeout
+        // function randomAsyncOperation(callback) {
+        //     setTimeout(() => {
+        //         const randomNumber = Math.random();
+        //         callback(randomNumber);
+        //     }, 3000); // Simulating a delay of 1000 milliseconds (1 second)
+        // }
+
+        // // Callback function to handle the result
+        // function callback(result) {
+        //     console.log("Result from Async operation:", result);
+        // }
+
+        // // Calling randomAsyncOperation with the callback function
+        // randomAsyncOperation((response) => callback(response));
+
+
+        // Simulating an asynchronous operation with a setTimeout
+        function randomAsyncOperation() {
+            setTimeout(() => {
+                const randomNumber = Math.random();
+                callback(randomNumber);
+            }, 1000); // Simulating a delay of 1000 milliseconds (1 second)
+        }
+
+        // Callback function to handle the result
+        function callback(result) {
+            console.log("Result from Async operation:", result);
+        }
+
+        // Calling randomAsyncOperation with the callback function
+        console.log("start");
+        randomAsyncOperation();
+
+
+
+
+
     </script>
 </body>
 
