@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const employee = [
+            {
+                name: "Alex",
+                skills: [
+                    { name: "ReactJS", type: "Frontend" },
+                    { name: "nodeJS", type: "Backend" },
+                ],
+            },
+            {
+                name: "Anna",
+                skills: [
+                    { name: "Angular", type: "Frontend" },
+                    { name: "Python", type: "Backend" },
+                ],
+            },
+        ];
+
+        for (let i = 0; i < employee.length; i++) {
+            const currentEmployee = employee[i];
+            console.log(`Name: ${currentEmployee.name}`);
+
+            console.log('skill::');
+            currentEmployee.skills.forEach((skill) => {
+                Object.keys(skill).forEach((key) => {
+                    console.log(`${key}: ${skill[key]}`);
+                });
+            })
+
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
